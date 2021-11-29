@@ -1,0 +1,182 @@
+body {
+    background-color: #f1f5f8;
+}
+
+@media(max-width:991px) {
+
+
+    .news-item {
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
+
+    .mobile-show {
+        display: block !important;
+    }
+
+    .news-img img {
+
+        width: 100%;
+
+
+
+
+    }
+}
+
+@media (min-width:991px) {
+    .news-img {
+
+        max-width: 250px;
+        object-fit: contain;
+    }
+
+    .mobile-show {
+        display: none !important;
+    }
+
+}
+
+.city-change {
+    text-align: right;
+}
+
+.city-name {
+    padding-top: 2rem;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.nav {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.nav button {
+    background-color: #5474ff !important;
+    color: white !important;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.temp {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 2rem 0;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.weather-pic img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+}
+
+.main-container {
+    padding-top: 6rem;
+}
+
+.search {
+    width: 100% !important;
+    border-radius: 15px !important;
+    box-shadow: 5px 5px 17px -1px rgba(0, 0, 0, 0.15) !important;
+    ;
+
+}
+
+.mobile-card {}
+
+.weather {
+    border-radius: 15px !important;
+    box-shadow: 5px 5px 17px -1px rgba(0, 0, 0, 0.30) !important;
+    background-color: rgba(255, 255, 255, 0.30) !important;
+
+
+}
+
+.news-item {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border-bottom: solid 1px #b6c5d6;
+    padding: 1rem;
+}
+
+.news-text {
+    padding: 2rem;
+
+}
+
+.news-img {
+    text-align: center;
+}
+
+.news-img img {
+    border-radius: 15px;
+    width: 100%;
+    margin-right: 20px;
+    height: 100%;
+
+
+
+
+}
+
+.news-author {
+    text-align: right;
+}
+
+.news-card {
+
+    box-shadow: 5px 5px 17px -1px rgba(0, 0, 0, 0.10) !important;
+    width: 100% !important;
+}
+
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.search button {
+    background-color: #5474ff !important;
+    color: white !important;
+}
+
+.search-input {
+    margin: 1rem 0;
+    display: flex !important;
+    justify-content: center !important;
+
+}
+
+.search-input input {
+    background-color: #f1f5f9 !important;
+    color: #a6b5bb !important;
+}
+
+.category {
+    margin-bottom: 1rem !important;
+}
+
+.news-section {}
+
+.news-container {
+    margin-top: 5rem;
+}

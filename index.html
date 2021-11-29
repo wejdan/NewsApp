@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>News App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <script src="https://kit.fontawesome.com/ee532bf7be.js" crossorigin="anonymous"></script>
+
+    <link href="css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="ui container main-container">
+
+        <div class="ui  centered  grid">
+            <div class="row">
+            <div class="mobile-show column">
+                <div class="mobile-card weather-card">
+                    <div class="ui card weather">
+          
+         
+                        <div class="content">
+                            <div class="weather-header">
+                     <div class="city-name">
+                         ---
+                     
+                     </div>
+                     <div class="weather-date">
+                       <span class="hours"></span>: <span class="minutes"></span>: <span class="seconds"></span>,<span class="phase"></span>,<span class="weather-desc"></span>
+                     </div>
+                     <div class="weather-pic">
+                     <img src="" alt="">
+                     </div>
+                            </div>
+                     
+                            <div class="temp">
+                             --°
+                            </div>
+                            <div class="weather-info">
+                     <div class="precipitation ">
+                         <i class="fas fa-tint"></i> <span class="precipitation-text">precipitation:</span>
+                     
+                     </div>
+                     <div class="wind">
+                         <i class="fas fa-wind"></i> <span class="wind-text">-- hm/wind</span>
+                     </div>
+                            </div>
+                                   </div>
+                  <div class="extra content city-change">
+    <a href="#" class="change-city">Change City </a>
+                 </div>
+            </div>
+                      </div>
+
+            </div>
+            </div>
+            <div class=" twelve wide mobile ten wide computer  column  ">
+                <div class="ui cards ">
+                    <div class="card search">
+                      <div class="center aligned content">
+                        <form class="field search-form ">
+                            <div class="ui search-input action input ">
+                                <input type="text" id="searchWord"  class="" placeholder="Search..."/>
+                                <button class="ui button"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+
+                        <button class="ui basic button category" data-value="business">business</button>
+                        <button class="ui basic button category" data-value="entertainment">entertainment</button>
+                        <button class="ui basic button category "  data-value="general">general</button>
+                        <button class="ui basic button category" data-value="health">health</button>
+                        <button class="ui basic button category" data-value="science">science</button>
+                        <button class="ui basic button category" data-value="sports">sports</button>
+                        <button class="ui basic button category" data-value="technology">technology</button>
+                        <div class="ui selection dropdown select-country">
+                            <input type="hidden" name="country">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Country</div>
+                            <div class="menu">
+                    
+                            </div>
+                          </div>
+
+
+                      </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+   
+    </div></div>
+
+    <div class="ui mini  modal transition ">
+        <div class="header">
+          Change City
+        </div>
+        <div class="content">
+            <div class="ui selection dropdown select-city">
+                <input type="hidden" name="city">
+                <i class="dropdown icon"></i>
+                <div class="default text">City</div>
+                <div class="menu">
+                  
+                </div>
+              </div>
+        </div>
+        <div class="actions">
+          <div class="ui negative button">
+            Cancel
+          </div>
+          <div class="ui positive right labeled icon button approve">
+            Save
+            <i class="checkmark icon"></i>
+          </div>
+        </div>
+      </div>
+
+    <div class="ui   grid news-section ">
+        <div class="tablet reversed computer reversed row">
+            <div class="  sixteen wide tablet four wide computer column  mobile-hidden">
+                <div class="weather-card">
+                    <div class="ui card weather">
+          
+         
+                        <div class="content">
+                 <div class="weather-header">
+          <div class="city-name">
+              ---
+          
+          </div>
+          <div class="weather-date">
+            <span class="hours"></span>: <span class="minutes"></span>: <span class="seconds"></span>,<span class="phase"></span>,<span class="weather-desc"></span>
+          </div>
+          <div class="weather-pic">
+          <img src="" alt="">
+          </div>
+                 </div>
+          
+                 <div class="temp">
+                  --°
+                 </div>
+                 <div class="weather-info">
+          <div class="precipitation ">
+              <i class="fas fa-tint"></i> <span class="precipitation-text">precipitation:</span>
+          
+          </div>
+          <div class="wind">
+              <i class="fas fa-wind"></i> <span class="wind-text">-- hm/wind</span>
+          </div>
+                 </div>
+                        </div>
+                        <div class="extra content city-change">
+          <a href="#" class="change-city">Change City </a>
+                       </div>
+                  </div>
+                  </div>
+            </div>
+           
+            <div class="sixteen wide mobile fourteen wide tablet ten wide computer  centered column">
+<div class="news-container">
+    <div class="ui cards ">
+        <div class="card news-card ">
+          <div class="content news-list">
+            <div class="ui segment">
+                <div class="ui active loader">
+                    
+                </div>
+                <p></p>
+               </div>
+          </div>
+
+          <div class="nav">
+              <button class="ui disabled button prev-button"><i class="fas fa-arrow-left"></i></button>
+              <button class="ui disabled button next-button"><i class="fas fa-arrow-right"></i></button>
+
+          </div>
+        </div></div>
+</div>
+    
+            </div>
+
+        </div>
+      </div>
+
+  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script src="data.js"></script>
+  <script src="WeatherAPI.js"></script>
+
+  <script src="NewsAPI.js"></script>
+  <script src="app.js"></script>
+  <script src="time.js"></script>
+
+    
+    
+
+</body>
+</html>
